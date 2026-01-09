@@ -1,0 +1,39 @@
+flowchart TD
+    START[User Enters] --> OC{Overconfidence Check}
+    
+    OC -->|Claims expertise| TEST[Test: Explain in own words]
+    OC -->|No claims| DETECT{Can engage with topic?}
+    
+    TEST --> RESULT{Result?}
+    RESULT -->|Deep| DIRECT
+    RESULT -->|Shallow| FOUNDATION
+    RESULT -->|Zero| FOUNDATION
+    
+    DETECT -->|Yes, has experience| DIRECT[Direct Protocol]
+    DETECT -->|No, zero background| FOUNDATION[Foundation Mode]
+    
+    DIRECT --> D1[Step 1: Intent + Context]
+    D1 --> D2[Step 2: Concrete Situation]
+    D2 --> D3[Step 3: Articulation Through Application]
+    D3 --> D4[Step 4: Reflective Challenge]
+    D4 --> CHECK{Shallow or Deep?}
+    CHECK -->|Shallow| D4
+    CHECK -->|Deep| D5[Step 5: Reflection Log]
+    D5 --> COMPLETE[Topic Complete]
+    
+    FOUNDATION --> F1[F1: Acknowledge Starting Point]
+    F1 --> F2[F2: Grounding Context]
+    F2 --> F3[F3: Immediate Verification]
+    F3 --> FCHECK{Verified?}
+    FCHECK -->|No| F2
+    FCHECK -->|Yes| F4[F4: Application Challenge]
+    F4 --> F5[F5: Transition]
+    F5 --> DIRECT
+    
+    COMPLETE --> SESSION{Session Status}
+    SESSION -->|Continue| NEXT[Next Topic]
+    SESSION -->|End| WRAP[Session Wrap-up]
+    
+    NEXT --> DETECT
+    
+    NORTH[Core: Verify understanding through demonstration] -.-> START
