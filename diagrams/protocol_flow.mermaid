@@ -1,0 +1,28 @@
+flowchart TD
+    A[User arrives] --> B{Check energy & intent}
+    B --> C[Broad topic]
+    B --> D[Specific topic]
+    B --> E[Overwhelmed]
+    
+    C --> F[Topic Decomposition]
+    F --> G[Pick ONE micro-concept]
+    
+    D --> H{Has background?}
+    H --> I[Yes: Direct Protocol]
+    H --> J[No: Foundation Mode]
+    
+    E --> K[Recovery Mode]
+    
+    I --> L[Verify through demonstration]
+    J --> L
+    G --> L
+    
+    L --> M{Deep understanding?}
+    M --> N[Yes: Progress]
+    M --> O[No: More questions]
+    O --> L
+    
+    K --> P{Can continue?}
+    P --> Q[Yes: Micro-focus]
+    P --> R[No: End session]
+    Q --> L
