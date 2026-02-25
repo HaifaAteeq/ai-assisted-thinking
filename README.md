@@ -1,278 +1,185 @@
 # AI-Assisted Thinking Protocol
-## A Learning System That Doesn't Let You Lie to Yourself About Understanding
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Status: Research](https://img.shields.io/badge/Status-Active%20Research-blue.svg)]()
-[![Version: 2.2](https://img.shields.io/badge/Version-2.2-green.svg)]()
+**Stop Asking AI to Explain. Start Explaining Back.**
 
----
-
-## 🎯 Core Principle
-
-> **"This AI does not let me lie to myself about understanding."**
-
-Most learning tools give you answers. This system makes you **demonstrate** understanding before moving forward.
+A protocol that flips AI learning: instead of AI explaining to you, AI makes you explain back.
 
 ---
 
-## 🧠 The Problem
+## 🎯 Try It Now
 
-Traditional learning (tutorials, courses, books) often produces:
-- ✅ Recognition ("I've seen this before")
-- ❌ Understanding ("I know WHY this works")
-- ❌ Application ("I can USE this in new situations")
-
-**Result:** You pass tests but can't apply knowledge. You watch 100 tutorials but can't build anything.
+**https://haifaateeq.github.io/ai-assisted**
 
 ---
 
-## 💡 The Solution
+## The Problem
 
-A protocol that:
-1. **Grounds concepts in your experience** before explaining
-2. **Forces you to articulate** in your own words
-3. **Detects shallow vs. deep understanding** through your responses
-4. **Blocks progression** until you demonstrate real comprehension
-5. **Supports recovery** when you hit cognitive walls
+Most AI learning:
+- You ask → AI explains → You think you understand → You forget
 
----
+This protocol:
+- You ask → AI shows example → AI asks YOU → You explain → You remember
 
-## 🏗️ System Architecture
-
-```
-USER ENTERS
-     │
-     ▼
-┌─────────────────────────────────┐
-│     ENTRY DETECTION             │
-│  • Broad topic? → Decompose     │
-│  • Zero background? → Ground    │
-│  • Claims expertise? → Verify   │
-│  • Brain freeze? → Recover      │
-└─────────────────────────────────┘
-     │
-     ▼
-┌─────────────────────────────────┐
-│     APPROPRIATE MODE            │
-│  • Direct Protocol              │
-│  • Foundation Mode              │
-│  • Application Gap Mode         │
-│  • Recovery Mode                │
-│  • Continuity Mode              │
-└─────────────────────────────────┘
-     │
-     ▼
-┌─────────────────────────────────┐
-│     VERIFICATION GATES          │
-│  • Articulation (own words)     │
-│  • Application (use it)         │
-│  • Transfer (new situation)     │
-│  • Retention (remembers later)  │
-└─────────────────────────────────┘
-     │
-     ▼
-   DEEP UNDERSTANDING VERIFIED
-```
+**Recognition is not understanding.**
 
 ---
 
-## 📚 Documentation
+## Works With
 
-| Document | Description |
-|----------|-------------|
-| [Protocol v2.2](docs/protocol_v2.2.md) | Complete system specification |
-| [System Prompt](prompts/system_prompt_v2.2.md) | Ready-to-use prompt for any AI |
-| [Math for ML Prompt](prompts/math_for_ml_prompt.md) | Specialized learning prompt |
-| [Project History](docs/MASTER_PROJECT_DOCUMENTATION.md) | Full development journey |
-
----
-
-## 🚀 Quick Start
-
-### Option 1: Use with Any AI Chatbot
-
-1. Copy the [System Prompt](prompts/system_prompt_v2.2.md)
-2. Paste into ChatGPT, Claude, or any AI
-3. Start learning any topic
-
-### Option 2: Use Math for ML Curriculum
-
-1. Copy the [Math for ML Prompt](prompts/math_for_ml_prompt.md)
-2. Paste into any AI chatbot
-3. Follow the structured curriculum
+| Model | Plan | Result |
+|-------|------|--------|
+| Claude | Paid | ✅ Works |
+| DeepSeek | Free | ✅ Excellent |
+| Gemini | Free | ✅ Works |
+| ChatGPT | Paid | ✅ Works |
+| ChatGPT | Free | ❌ Skips steps |
 
 ---
 
-## 🔬 Research Status
+## Current Version: 3.2
 
-This project is part of PhD research on AI-assisted learning.
-
-### Validated Through Testing
-- [x] Protocol produces deeper understanding than answer-delivery
-- [x] Recovery Mode helps with cognitive overload
-- [x] Second-language learners can engage effectively
-- [ ] Formal study with university students (planned)
-
-### Current Phase
-**Phase 1:** Self-validation and protocol refinement
-
-### Research Questions
-1. Does questions-first produce deeper understanding than answer-delivery?
-2. Can AI reliably detect shallow vs. deep understanding?
-3. Does cross-session continuity improve long-term retention?
+### Features
+- **Topic Decomposition** - Broad topics → manageable levels
+- **Background Check** - AI checks what you know
+- **Recovery Mode** - Help when stuck (1-5 scale)
+- **Time Management** - Stops when time up
+- **Two-Step Ending** - You summarize, then AI confirms
+- **Language Support** - Use your native language
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```
 ai-assisted-thinking/
 │
-├── README.md                     # This file
-├── LICENSE                       # MIT License
+├── README.md
+├── LICENSE.md
+├── VISION.md
+├── SETUP.md
+├── .gitignore
 │
-├── docs/                         # Documentation
-│   ├── protocol_v2.2.md         # Complete protocol specification
-│   ├── MASTER_PROJECT_DOCUMENTATION.md  # Project history
-│   └── version_history.md       # Changes across versions
+├── docs/                              # 📋 Documentation
+│   ├── protocol_v3.2.md               # Current protocol
+│   ├── user_guide_v3.2.md             # How to use
+│   ├── development_journey_complete.md # Evolution story
+│   ├── protocol_comparison_v2_vs_v3.md
+│   ├── preprint_ai_assisted_thinking_protocol.md
+│   ├── MASTER_PROJECT_DOCUMENTATION.md
+│   ├── academic_reading_writing_protocol_v1.md
+│   ├── FOR_TESTERS.md
+│   ├── USER_GUIDE.md
+│   ├── version_history.md
+│   └── archive/                       # Old protocol versions
+│       ├── ai_assisted_thinking_protocol_v2.md
+│       ├── ai_assisted_thinking_protocol_v2.1.md
+│       ├── ai_assisted_thinking_protocol_v2.2.md
+│       ├── protocol_v2.2.md
+│       ├── protocol_v3.0.md
+│       └── protocol_v3.1.md
 │
-├── prompts/                      # Ready-to-use prompts
-│   ├── system_prompt_v2.2.md    # General learning prompt
-│   ├── math_for_ml_prompt.md    # Math for ML specific
-│   └── template_prompt.md       # Template for custom topics
+├── prompts/                           # 📝 Ready-to-use prompts
+│   ├── prompt_v3.2.md                 # Current prompt
+│   ├── system_prompt_v2.2.md
+│   ├── math_for_ml_prompt.md
+│   ├── academic_reading_writing_prompt.md
+│   └── template_prompt.md
 │
-├── sessions/                     # Learning session logs
+├── sessions/                          # 📚 Learning sessions
 │   ├── math_for_ml/
 │   │   ├── session_001_vectors_similarity.md
-│   │   ├── session_002_vector_distance.md
-│   │   └── ...
-│   └── template_session.md      # Template for logging
+│   │   ├── session_002_distance_dotproduct.md
+│   │   ├── session_003_neural_networks_learning_loop.md
+│   │   └── session_004_gradient_descent.md
+│   ├── data_prep/
+│   │   ├── session_data_prep_001_raw_data_structure.md
+│   │   ├── session_data_prep_002_cleaning_logic.md
+│   │   ├── session_data_prep_003_continuation_pandas.md
+│   │   └── session_data_prep_004_imputation_tradeoffs.md
+│   └── academic_reading/
+│       └── session_001_foundations.md
 │
-├── research/                     # Research materials
-│   ├── literature_review.md     # Related research
-│   ├── study_design.md          # Planned studies
-│   └── findings/                # Research findings
+├── curriculum/                        # 📖 Learning curricula
+│   ├── math_for_ml_curriculum_v2.md
+│   ├── math_for_ml_validation_checklist.md
+│   └── math_for_ml_curriculum_validation.md
 │
-├── diagrams/                     # Visual documentation
-│   ├── protocol_architecture.mermaid
-│   ├── mode_flowchart.mermaid
-│   └── detection_system.mermaid
+├── tests/                             # 🧪 Test results
+│   ├── test_deepseek_cells.md         # ✅ Success
+│   ├── test_gemini_pandas.md          # ✅ Success
+│   └── test_chatgpt_failed.md         # ❌ Analysis
 │
-└── examples/                     # Example interactions
-    ├── successful_session.md    # What good learning looks like
-    ├── recovery_mode_example.md # Brain freeze → recovery
-    └── common_patterns.md       # Typical learner patterns
+├── research/                          # 🔬 Research documentation
+│   ├── research_questions.md
+│   ├── limitations_documentation.md
+│   ├── research_detection_evidence_analysis.md
+│   ├── protocol_test_analysis_chatgpt.md
+│   ├── protocol_performance_analysis_short_vs_full.md
+│   ├── retention_test_schedule.md
+│   ├── phd_proposal_structure.md
+│   ├── phd_application_timeline.md
+│   ├── before_protocol_template.md
+│   └── incident_notebooklm_protocol_absorption.md
+│
+├── blog/                              # ✍️ Blog posts
+│   ├── blog_post_final.md
+│   ├── blog_post_expanded.md
+│   └── blog_post_protocol_introduction.md
+│
+├── templates/                         # 📄 Templates
+│   ├── template_session.md
+│   └── template_detection_evidence_log.md
+│
+└── diagrams/                          # 📊 Diagrams
+    └── protocol_flow.mermaid
 ```
 
 ---
 
-## 🎓 The Protocol Modes
+## Version History
 
-### Core Modes
-
-| Mode | When | What It Does |
-|------|------|--------------|
-| **Direct Protocol** | User has experience | 5-step deep learning process |
-| **Foundation Mode** | Zero background | Grounds in experience, then protocol |
-| **Application Gap** | Read but can't apply | Forces doing, finds real gaps |
-| **Continuity Mode** | Returning user | Verifies retention, builds forward |
-
-### Support Modes
-
-| Mode | When | What It Does |
-|------|------|--------------|
-| **Recovery Mode** | Brain freeze | Reduces load, helps recover |
-| **Topic Decomposition** | Broad topic | Breaks into micro-concepts |
+| Version | Date | Key Changes |
+|---------|------|-------------|
+| **v3.2** | Feb 11, 2026 | Gemini support, time management, two-step ending |
+| v3.1 | Feb 2026 | Silent mode switching, invite to return |
+| v3.0 | Feb 2026 | Simplified (too simple, lost features) |
+| v2.2 | Jan 2026 | Topic decomposition, recovery mode |
+| v2.1 | Jan 2026 | Refinements |
+| v2.0 | Jan 2026 | First structured version |
 
 ---
 
-## 🔍 Understanding Detection
+## Related Repositories
 
-### Shallow Signals (Need Deeper Work)
-- Vague language ("it's for data")
-- Lists without relationships ("X needs A, B, C")
-- No causal reasoning (missing "because", "therefore")
-- Cannot apply to new situation
-
-### Deep Signals (Can Progress)
-- Specific examples with context
-- Causal reasoning ("X causes Y because Z")
-- Explains relationships ("A uses B to create C")
-- Transfers to new situations successfully
+- **PWA App:** [haifaateeq/ai-assisted](https://github.com/haifaateeq/ai-assisted)
 
 ---
 
-## 🌍 For Second-Language Learners
+## Core Principle
 
-The protocol is designed to be **expression-tolerant but thinking-rigorous**:
+> **"This AI does not let me lie to myself about understanding."**
 
-- ✅ Accept native language when stuck
-- ✅ Accept broken English, keywords, fragments
-- ✅ Focus on reasoning quality, not grammar
-- ✅ Detect language barrier vs. understanding gap
+Understanding must be demonstrated, not claimed.
 
 ---
 
-## 📊 Session Logging Template
+## Research
 
-```markdown
-# Session [NUMBER]: [TOPIC]
+Independent research on AI-assisted learning.
 
-## Metadata
-- Date: 
-- Duration:
-- Energy Level (1-5):
-- Protocol Version:
-
-## What Was Demonstrated
-- [ ] Concept 1
-- [ ] Concept 2
-
-## Gaps Identified
-- 
-
-## Next Session
-- 
-
-## Confidence (1-10):
-```
+Addressing the "illusion of competence" - where learners think they understand AI explanations but cannot apply the knowledge.
 
 ---
 
-## 🤝 Contributing
+## Author
 
-This is currently a personal research project. However, if you:
+**Haifa Alsubhi**  
+Independent Researcher - AI-Assisted Learning
 
-- **Want to test the protocol:** Use it and share your experience
-- **Have suggestions:** Open an issue
-- **Are a researcher:** Reach out for collaboration
-
----
-
-## 📜 License
-
-MIT License - See [LICENSE](LICENSE) for details.
+📧 haifa.at.al@gmail.com
 
 ---
 
-## 🙏 Acknowledgments
+## License
 
-- Developed through self-directed learning and real testing
-- Informed by learning science research on productive struggle
-- Refined through actual use (the best teacher)
-
----
-
-## 📬 Contact
-
-[Your contact information]
-
----
-
-## ⭐ Star This Repo
-
-If this approach to learning resonates with you, star the repo to follow updates.
-
----
-
-*"Most learning tools make learning faster and easier. This one makes learning deeper and lasting."*
+CC BY-NC-SA 4.0 - Use it, adapt it, share it. Just give credit.

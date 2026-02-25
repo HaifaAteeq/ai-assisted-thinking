@@ -179,6 +179,57 @@ No verification.                   User: [Demonstrates understanding]
 
 ## The Vision
 
+### The Journey
+
+This project started as a protocol to improve how current AI (ChatGPT, Claude) teaches. The end goal is to build a standalone AI Agent with the protocol built-in.
+
+```
+PHASE 1: PROTOCOL (Current)
+│
+│  Problem: Current AI explains but doesn't verify understanding
+│  Solution: Protocol that forces demonstration
+│  Method: Paste protocol into existing AI
+│
+↓
+PHASE 2: RESEARCH (PhD)
+│
+│  Validate protocol works
+│  Collect evidence from testers
+│  Understand what makes it effective
+│  Discover: Protocol alone isn't enough—needs domain knowledge
+│
+↓
+PHASE 3: AI AGENT (Future)
+│
+│  Build standalone AI tutor
+│  Protocol + Domain Knowledge built-in
+│  No need to paste prompts
+│  Works for any learning domain
+│
+↓
+GOAL: AI that truly teaches, not just explains
+```
+
+### Why Build an Agent?
+
+Current approach (pasting protocol) has limits:
+
+| Limitation | Problem |
+|------------|---------|
+| User must paste prompt | Extra step, can forget |
+| AI lacks domain knowledge | Generic examples fail (e.g., "legs" for medical topic) |
+| No memory between sessions | Loses context |
+| Depends on AI capability | ChatGPT Free fails, Claude Pro works |
+
+AI Agent solves these:
+
+| Solution | Benefit |
+|----------|---------|
+| Protocol built-in | Works automatically |
+| Domain knowledge included | Relevant examples always |
+| Memory system | Tracks learner progress |
+| Controlled quality | Consistent experience |
+
 ### Short-term: A Protocol That Works
 
 - Learners who can DEMONSTRATE understanding
@@ -287,12 +338,25 @@ After 4 sessions:
 
 ## Contact
 
-[Your information]
+**Haifa Ateeq Alsubhi**
+- Email: haifa.at.al@gmail.com
+- GitHub: [github.com/HaifaAteeq](https://github.com/HaifaAteeq)
 
 ---
 
 ## License
 
-MIT License - Free to use, modify, and share.
+**CC BY-NC-SA 4.0** (Creative Commons Attribution-NonCommercial-ShareAlike 4.0)
+
+You are free to:
+- **Share** — copy and redistribute the material
+- **Adapt** — remix, transform, and build upon the material
+
+Under these terms:
+- **Attribution** — You must give appropriate credit to Haifa Ateeq Alsubhi
+- **NonCommercial** — You may not use the material for commercial purposes
+- **ShareAlike** — If you remix or transform, you must distribute under the same license
+
+Full license: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 ---
