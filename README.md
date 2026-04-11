@@ -33,10 +33,11 @@ This protocol:
 | Gemini | Free | ✅ Works |
 | ChatGPT | Paid | ✅ Works |
 | ChatGPT | Free | ❌ Skips steps |
+| Copilot | Free | ✅ Works |
 
 ---
 
-## Current Version: 3.2
+## Current Version: 3.3
 
 ### Features
 - **Topic Decomposition** - Broad topics → manageable levels
@@ -160,6 +161,12 @@ ai-assisted-thinking/
 > **"This AI does not let me lie to myself about understanding."**
 
 Understanding must be demonstrated, not claimed.
+
+---
+
+## Blog
+
+- [You Dont Forget Because Youre Bad at Learning](https://medium.com/@haifa.at.al/you-dont-forget-because-you-re-bad-at-learning-3154611969e3)
 
 ---
 

@@ -1,5 +1,7 @@
 # How to Use This Protocol
 ## A Complete Guide for Learners - v3.2
+> **Note:** This guide reflects v3.3. If you are using a technical topic (coding, math, ML, data), use `prompt_v3.3_technical.md`. For all other topics, use `prompt_v3.3_general.md`.
+
 
 ---
 

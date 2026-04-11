@@ -145,3 +145,30 @@ After, I'd love to hear:
 **Send your feedback to:** haifa.at.al@gmail.com
 
 ---
+
+---
+
+## Updated Protocol: v3.3
+
+Two versions are now available depending on your topic:
+
+**For coding, math, ML, data science:**
+Use `prompts/prompt_v3.3_technical.md`
+
+**For all other topics:**
+Use `prompts/prompt_v3.3_general.md`
+
+### What's new in v3.3
+
+The protocol now grounds you in a real-world situation before asking any questions. If you have zero background on a topic, the AI will show you a real example of where that concept exists in practice — before testing your understanding.
+
+For technical topics, understanding is now verified by solving a real problem, not just explaining it back.
+
+### What to watch for when testing v3.3
+
+- Does the AI show a real-world situation before asking questions when you're starting from zero?
+- Does it feel like you have enough to answer the first question?
+- For technical topics — does the problem feel like something you'd actually face?
+- Does the AI still block progression when your answer is shallow?
+
+Send feedback to: haifa.at.al@gmail.com

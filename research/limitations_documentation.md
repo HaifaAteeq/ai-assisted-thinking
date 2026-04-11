@@ -135,7 +135,14 @@ This document defines:
 - Impact: User learns wrong information
 - Mitigation: Cross-reference important concepts
 
-**Failure Mode 5: Motivation Loss**
+**Failure Mode 5: Premature Questioning (Addressed in v3.3)**
+- What: Protocol asks questions before learner has sufficient foundation to answer
+- When: Learner explores a broad or unfamiliar topic with zero background
+- Impact: Learner cannot engage; session stalls or produces guessing not thinking
+- Mitigation: v3.3 Real-World Grounding Mechanism — grounds learner in real situation before first question
+- Evidence: Confirmed independently by two testers on two platforms (Copilot and ChatGPT Free)
+
+**Failure Mode 6: Motivation Loss**
 - What: User quits due to difficulty
 - When: Struggle becomes frustration
 - Impact: Learning abandoned
@@ -159,9 +166,9 @@ This document defines:
 
 | Mode | Weakness | Status |
 |------|----------|--------|
-| Foundation Mode | May over-simplify for some users | Needs calibration |
+| Foundation Mode | May over-simplify for some users | Addressed in v3.3 with Real-World Grounding Mechanism |
 | Recovery Mode | May not detect all freeze signals | Needs more testing |
-| Application Gap Mode | Limited real-world application testing | Future improvement |
+| Application Gap Mode | Limited real-world application testing | v3.3 adds real-world problem requirement |
 | Continuity Mode | Depends on user honesty about recall | Trust issue |
 
 ---

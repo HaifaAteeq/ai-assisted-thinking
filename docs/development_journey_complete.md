@@ -836,3 +836,108 @@ The AI-Assisted Learning Protocol evolved through multiple iterations:
 *"This AI does not let me lie to myself about understanding."*
 
 The journey continues.
+
+---
+
+## Chapter 6: v3.3 — The Grounding Problem (April 2026)
+
+### The Gap That Two Testers Found Independently
+
+After v3.2 was tested and confirmed working across five platforms, two independent testers identified the same failure from different directions.
+
+**Tester 1 (Medical student, ChatGPT Free, Arabic, January 2026):** Asked about Maxillofacial prosthetics. Protocol jumped to questions before the learner had enough foundation. Session stalled.
+
+**Tester 2 (External academic reviewer, Copilot, system programming in C, February 2026):** Selected "exploring" and asked about signals in C. Protocol provided one example sentence then immediately asked a deep technical question. Learner was not prepared to answer.
+
+Same failure. Different platforms. Different domains. Different people.
+
+The root cause: the protocol treated "topic narrowed" or "exploring" as equivalent to "learner is ready to be questioned." It was not. Narrowing a topic does not mean you understand it. The learner still needs enough foundation before questions are useful.
+
+### The Design Decision
+
+v3.3 introduces the **Real-World Grounding Mechanism** — not a new mode, but a silent mechanism that activates inside any mode when the AI detects zero-background or confusion signals.
+
+The mechanism runs: **Ground → Connect → Check → Apply → Transfer → Summary**
+
+Key principle: explanation only to enable thinking, never to replace it. The Apply step requires a real-world problem — not a practice exercise — reflecting what the learner will actually encounter.
+
+### Two Versions
+
+v3.3 ships as two separate files:
+
+- **prompt_v3.3_technical.md** — for coding, math, ML, data science. Apply step = solve a real professional problem.
+- **prompt_v3.3_general.md** — for non-technical topics. Apply step = use the concept in a situation that demands judgment.
+
+This distinction exists because understanding in technical topics requires production — working code, correct calculation, functioning model — not just conceptual grasp.
+
+### What Did Not Change
+
+The core principle is unchanged. The verification gates are unchanged. All existing modes are unchanged. v3.3 closes a gap in Foundation Mode's trigger — expanding it from "I don't know" to any zero-background or confusion signal, anywhere in a session.
+
+---
+
+## Document History
+
+| Date | Change |
+|------|--------|
+| Feb 2026 | Initial documentation |
+| Feb 2026 | Added v3.2 testing results |
+| Feb 2026 | Added DeepSeek session evidence |
+| Apr 2026 | Added Chapter 6: v3.3 grounding problem and design decision |
+
+---
+
+## Chapter 5: v3.3 — Real-World Grounding Mechanism (April 2026)
+
+### The Problem That Kept Appearing
+
+Two independent testers on two different platforms reported the same failure: the protocol asked questions before the learner had enough foundation to answer them.
+
+**Tester 1** (medical student, Arabic, ChatGPT Free, January 2026): Struggled with Maxillofacial prosthetics topic. The protocol entered question mode before establishing any conceptual ground. Student found the experience "strange and odd."
+
+**Tester 2** (external academic reviewer, Copilot, February 2026): Testing system programming in C. Selected "exploring" as immediate need. Protocol produced one example sentence about signals then immediately asked: "What exactly changes in program state?" — a question the learner had not been prepared to answer.
+
+Same failure. Two people. Two platforms. Two domains.
+
+### The Insight
+
+The protocol's verification-first principle was correct. The problem was not the principle — it was a missing prerequisite: **you cannot verify understanding that was never built.**
+
+A learner exploring a new concept is not in a position to answer a verification question. The question is not wrong. The timing is wrong.
+
+### What Changed
+
+v3.3 introduces the Real-World Grounding Mechanism — a silent mechanism that activates inside any mode when:
+- Learner has zero background on a concept
+- Learner shows confusion signals mid-session
+
+The mechanism runs: **Ground → Connect → Check → Apply → Transfer → Summary**
+
+Critically:
+- Ground uses a real-world situation the learner will actually encounter — not a definition, not a simplified exercise
+- Apply requires solving a real problem (for technical topics: a problem resembling actual job or research context)
+- Transfer tests the same concept in a completely different situation
+- Summary is earned, not given upfront
+
+### Split into Two Versions
+
+After discussions with testers and reflection on the primary audience, v3.3 was released as two separate files:
+
+**prompt_v3.3_technical.md** — For coding, math, ML, data science, CS. Apply step requires solving a real professional problem. Understanding without application is professionally useless in these domains.
+
+**prompt_v3.3_general.md** — For non-technical topics. Apply step requires using the concept in a situation that demands judgment or analysis.
+
+### Core Principle Unchanged
+
+"This AI does not let me lie to myself about understanding."
+
+v3.3 does not soften this. It strengthens it — by ensuring that when the protocol asks, the learner has been given enough to actually think with.
+
+### Document History Update
+
+| Date | Change |
+|------|--------|
+| Feb 2026 | Initial documentation |
+| Feb 2026 | Added v3.2 testing results |
+| Feb 2026 | Added DeepSeek and Gemini session evidence |
+| Apr 2026 | Added v3.3 chapter — Real-World Grounding Mechanism |

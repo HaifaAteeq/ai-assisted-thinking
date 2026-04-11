@@ -83,10 +83,12 @@
 
 | Platform | Status |
 |----------|--------|
-| Claude Pro | Tested (works well) |
-| ChatGPT Free | Tested (some issues) |
-| ChatGPT Plus | Untested |
-| Other models | Untested |
+| Claude Pro | Tested ✅ |
+| ChatGPT Free | Tested ❌ Partial failure |
+| ChatGPT Plus | Tested ✅ |
+| DeepSeek Free | Tested ✅ |
+| Gemini Free | Tested ✅ |
+| Copilot | Tested ✅ (external reviewer) |
 
 | Sub-question | Focus |
 |--------------|-------|
@@ -155,7 +157,7 @@
 | Sub-question | Focus |
 |--------------|-------|
 | RQ11a | Does grounding in prior experience improve engagement? |
-| RQ11b | What happens when AI starts with confusing questions? |
+| RQ11b | What happens when AI starts with confusing questions? — Confirmed: learner cannot engage, session stalls (v3.3 addresses this) |
 | RQ11c | How to ensure AI starts with what learner knows? |
 
 ---
@@ -186,6 +188,7 @@
 | RQ6 (Cross-platform) | Claude better than ChatGPT Free | Preliminary |
 | RQ7 (Second language) | Works for self (second-language learner) | Preliminary |
 | RQ10 (AI errors) | Identified issue with ChatGPT start | Observation |
+| RQ11 (Starting points) | Two testers confirmed — questions before foundation fails | Confirmed — addressed in v3.3 |
 
 ---
 
@@ -246,6 +249,6 @@ Based on preliminary evidence:
 
 **Status:** Living document - updated as research progresses
 
-**Last Updated:** January 2026
+**Last Updated:** April 2026
 
 ---
